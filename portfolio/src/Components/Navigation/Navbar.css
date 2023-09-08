@@ -1,5 +1,47 @@
 header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+}
+
+.navigation-items {
+    display: flex;
+}
+
+.mobile-navigation {
+    flex-direction: column;
+}
+
+.mobile-navigation .nav-links {
+    margin: 10px 0;
+}
+
+.desktop-navigation {
+    display: none;
+}
+
+.logo {
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .desktop-navigation {
+        display: block;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    header {
+        justify-content: space-around;
+    }
 }

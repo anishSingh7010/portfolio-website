@@ -1,15 +1,38 @@
-import NavigationLink from './NavigationLink';
 import './Navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { useState } from 'react';
+import NavItems from './NavItems';
+import { Modal } from '../../UI/Modal';
+import { CgClose } from 'react-icons/cg';
 
 const NavBar = () => {
+  const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+
+  const showNavigationModalHandler = () => {
+    setIsNavigationOpen(true);
+  };
+
+  const hideNavigationModalHandler = () => {
+    setIsNavigationOpen(false);
+  };
+
   return (
-    <header className="py-5 px-10">
-      <h3 className="text-3xl font-bold underline">LOGO</h3>
-      <nav>
-        <NavigationLink name="Projects" link="/projects" />
-        <NavigationLink name="About" link="/about" />
-        <NavigationLink name="Contact" link="/contact" />
-      </nav>
+    <header className="py-5 px-10 sticky">
+      <h3 className="logo text-3xl font-bold">LOGO</h3>
+      {isNavigationOpen && (
+        <Modal onClose={hideNavigationModalHandler}>
+          <div className="nav-modal flex h-full">
+            <NavItems modalNavigation={isNavigationOpen} />
+            <button className="self-start" onClick={hideNavigationModalHandler}>
+              <CgClose />
+            </button>
+          </div>
+        </Modal>
+      )}
+      <NavItems modalNavigation={false} />
+      <button className="hamburger-menu" onClick={showNavigationModalHandler}>
+        <GiHamburgerMenu />
+      </button>
     </header>
   );
 };
