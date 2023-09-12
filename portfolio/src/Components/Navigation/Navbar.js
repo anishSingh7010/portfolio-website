@@ -2,7 +2,7 @@ import './Navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import NavItems from './NavItems';
-import { Modal } from '../../UI/Modal';
+import { Modal } from '../UI/Modal';
 import { CgClose } from 'react-icons/cg';
 
 const NavBar = () => {
@@ -22,7 +22,10 @@ const NavBar = () => {
       {isNavigationOpen && (
         <Modal onClose={hideNavigationModalHandler}>
           <div className="nav-modal flex h-full">
-            <NavItems modalNavigation={isNavigationOpen} />
+            <NavItems
+              hideNavigation={hideNavigationModalHandler}
+              modalNavigation={isNavigationOpen}
+            />
             <button className="self-start" onClick={hideNavigationModalHandler}>
               <CgClose />
             </button>

@@ -1,5 +1,8 @@
-.hero-banner-wrapper {
-    background-color: bisque;
+.hero-button {
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .hero-image-wrapper {
@@ -15,10 +18,20 @@
     margin-top: -50px;
 }
 
+.socials {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
 @media (min-width: 768px) {
     .hero-image-wrapper {
         position: relative;
-        width: 500px;
+        width: 700px;
         height: auto;
         border-radius: 0;
         margin: 0;
@@ -34,6 +47,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 30px 20px;
     }
 
     .hero-text {

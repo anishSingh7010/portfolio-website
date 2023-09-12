@@ -1,4 +1,4 @@
-import HeroBanner from '../../Components/HeroBanner/HeroBanner';
+import HeroBanner from '../Components/HeroBanner/HeroBanner';
 
 const Homepage = () => {
   return <HeroBanner />;

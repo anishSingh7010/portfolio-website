@@ -1,7 +1,6 @@
 import NavigationLink from './NavigationLink';
 
 const NavItems = (props) => {
-  console.log(props.modalNavigation);
   const navigationItemsClasses =
     'navigation-items ' +
     (props.modalNavigation
@@ -9,9 +8,26 @@ const NavItems = (props) => {
       : 'desktop-navigation');
   return (
     <nav className={navigationItemsClasses}>
-      <NavigationLink name="Projects" link="/projects" />
-      <NavigationLink name="About" link="/about" />
-      <NavigationLink name="Contact" link="/contact" />
+      <NavigationLink
+        clickHandle={props.hideNavigation}
+        name="Projects"
+        link="/projects"
+      />
+      <NavigationLink
+        clickHandle={props.hideNavigation}
+        name="About"
+        link="/about"
+      />
+      <NavigationLink
+        clickHandle={props.hideNavigation}
+        name="Contact"
+        link="/contact"
+      />
+      <NavigationLink
+        clickHandle={props.hideNavigation}
+        name="Resume"
+        link="/resume"
+      />
     </nav>
   );
 };

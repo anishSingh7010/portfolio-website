@@ -1,0 +1,15 @@
+.contact-form-wrapper {
+    padding: 10px 50px;
+}
+
+.queries-wrapper {
+    margin-bottom: 0.5rem;
+}
+
+.queries-wrapper textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding-left: 0.5rem;
+}

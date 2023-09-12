@@ -1,7 +1,9 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Homepage from './pages/homepage/Homepage';
+import Homepage from './pages/Homepage';
 import NavBar from './Components/Navigation/Navbar';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 
 function App() {
   const router = createBrowserRouter([
@@ -11,6 +13,24 @@ function App() {
         <>
           <NavBar />
           <Homepage />
+        </>
+      ),
+    },
+    {
+      path: '/resume',
+      element: (
+        <>
+          <NavBar />
+          <Resume />
+        </>
+      ),
+    },
+    {
+      path: '/contact',
+      element: (
+        <>
+          <NavBar />
+          <Contact />
         </>
       ),
     },
