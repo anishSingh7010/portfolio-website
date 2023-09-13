@@ -4,6 +4,7 @@
 
 .queries-wrapper {
     margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .queries-wrapper textarea {
@@ -11,5 +12,13 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     font: inherit;
-    padding-left: 0.5rem;
+    padding: 10px;
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    .contact-form-wrapper {
+        width: 500px;
+        margin: auto;
+    }
 }

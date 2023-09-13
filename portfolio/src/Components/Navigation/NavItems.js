@@ -15,8 +15,8 @@ const NavItems = (props) => {
       />
       <NavigationLink
         clickHandle={props.hideNavigation}
-        name="About"
-        link="/about"
+        name="Resume"
+        link="/resume"
       />
       <NavigationLink
         clickHandle={props.hideNavigation}
@@ -25,8 +25,8 @@ const NavItems = (props) => {
       />
       <NavigationLink
         clickHandle={props.hideNavigation}
-        name="Resume"
-        link="/resume"
+        name="About"
+        link="/about"
       />
     </nav>
   );

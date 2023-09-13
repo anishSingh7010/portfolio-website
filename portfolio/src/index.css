@@ -6,3 +6,11 @@
 body {
     font-family:  'Lato', sans-serif;
 }
+
+.button {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 200px;
+}

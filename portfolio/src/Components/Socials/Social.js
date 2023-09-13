@@ -6,6 +6,7 @@ const Social = (props) => {
       title={props.title}
       href={props.link}
       className={'social-' + props.class}
+      target="_blank"
     >
       {props.children}
     </a>

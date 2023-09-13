@@ -8,7 +8,7 @@ const HeroBanner = () => {
     <div className="hero-banner-wrapper flex flex-col-reverse py-6">
       <div className="hero-text px-7 text-6xl">
         Hi! I am Anish. Welcome to my website!
-        <button className="hero-button block m-auto">My Work</button>
+        <button className="button hero-button block m-auto">My Work</button>
         <div className="socials">
           <Social
             title="LinkedIn"

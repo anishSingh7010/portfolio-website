@@ -4,6 +4,7 @@ import { useState } from 'react';
 import NavItems from './NavItems';
 import { Modal } from '../UI/Modal';
 import { CgClose } from 'react-icons/cg';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
@@ -18,7 +19,9 @@ const NavBar = () => {
 
   return (
     <header className="py-5 px-10 sticky">
-      <h3 className="logo text-3xl font-bold">LOGO</h3>
+      <h3 className="logo text-3xl font-bold">
+        <Link to="/">LOGO</Link>
+      </h3>
       {isNavigationOpen && (
         <Modal onClose={hideNavigationModalHandler}>
           <div className="nav-modal flex h-full">
