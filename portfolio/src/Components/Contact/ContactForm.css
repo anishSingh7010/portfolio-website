@@ -7,15 +7,6 @@
     text-align: left;
 }
 
-.queries-wrapper textarea {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font: inherit;
-    padding: 10px;
-    height: 200px;
-}
-
 @media (min-width: 768px) {
     .contact-form-wrapper {
         width: 500px;

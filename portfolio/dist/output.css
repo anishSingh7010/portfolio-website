@@ -584,6 +584,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .static {
   position: static;
 }
@@ -591,6 +595,14 @@ video {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-auto {
@@ -655,6 +667,11 @@ video {
   align-self: flex-start;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -694,11 +711,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -712,6 +724,10 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+html, body, .main, #root {
+  height: 100%;
+}
+
 body {
   font-family:  'Lato', sans-serif;
 }
@@ -722,4 +738,32 @@ body {
   background-color: black;
   border-radius: 5px;
   width: 200px;
+}
+
+.loading-wrapper {
+  display: flex;
+  position: fixed;
+  /* width: 100%; */
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.7);
+  z-index: 9999;
+}
+
+textarea.field-error {
+  border-color: red;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding: 10px;
+  height: 200px;
 }

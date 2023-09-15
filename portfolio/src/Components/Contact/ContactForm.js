@@ -4,18 +4,37 @@ import Input from '../UI/Input';
 import './ContactForm.css';
 import emailjs from '@emailjs/browser';
 import { Modal } from '../UI/Modal';
-import SuccessfulEmail from './SuccessfulEmail';
+import ContactEmailResult from './ContactEmailResult';
 import { CgClose } from 'react-icons/cg';
+import { Oval } from 'react-loader-spinner';
 
 const ContactForm = () => {
-  const [showEmailSuccessModal, setShowEmailSuccessModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const showEmailSuccessModalHandler = () => {
-    setShowEmailSuccessModal(true);
+  const [emailModal, setEmailModal] = useState({
+    show: false,
+    successful: false,
+  });
+
+  const showSuccessEmailModal = () => {
+    setEmailModal({
+      show: true,
+      successful: true,
+    });
   };
 
-  const hideEmailSuccessModalHandler = () => {
-    setShowEmailSuccessModal(false);
+  const showFailureEmailModal = () => {
+    setEmailModal({
+      show: true,
+      successful: false,
+    });
+  };
+
+  const hideEmailModal = () => {
+    setEmailModal({
+      show: false,
+      successful: false,
+    });
   };
 
   const {
@@ -55,7 +74,7 @@ const ContactForm = () => {
     }
 
     // implement loading state here
-
+    setIsLoading(true);
     emailjs
       .send(
         process.env.REACT_APP_EMAIL_SERVICE,
@@ -69,14 +88,20 @@ const ContactForm = () => {
       )
       .then(function (response) {
         if (response.status === 200) {
-          showEmailSuccessModalHandler();
+          showSuccessEmailModal();
+        } else {
+          showFailureEmailModal();
         }
+      })
+      .catch(function (response) {
+        showFailureEmailModal();
+      })
+      .finally(() => {
+        resetNameInput();
+        resetEmailInput();
+        resetQueryInput();
+        setIsLoading(false);
       });
-
-    // handle errors
-    resetNameInput();
-    resetEmailInput();
-    resetQueryInput();
   };
 
   let formIsValid = nameIsValid && emailIsValid && queryIsValid;
@@ -118,6 +143,7 @@ const ContactForm = () => {
             value={queryValue}
             onChange={queryChangeHandler}
             onBlur={queryBlurHandler}
+            className={queryHasError && 'field-error'}
           />
           {queryHasError && (
             <span className="form-error-message text-red-500	font-bold">
@@ -133,14 +159,25 @@ const ContactForm = () => {
           Send Email
         </button>
       </form>
-      {showEmailSuccessModal && (
-        <Modal onClose={hideEmailSuccessModalHandler}>
-          <div className="email-modal flex h-full w-full content-center">
-            <SuccessfulEmail />
-            <button
-              className="self-start"
-              onClick={hideEmailSuccessModalHandler}
-            >
+      {isLoading && (
+        <Oval
+          height={80}
+          width={80}
+          color="#4fa94d"
+          wrapperStyle={{}}
+          wrapperClass="loading-wrapper"
+          visible={true}
+          ariaLabel="oval-loading"
+          secondaryColor="#4fa94d"
+          strokeWidth={2}
+          strokeWidthSecondary={2}
+        />
+      )}
+      {emailModal.show && (
+        <Modal onClose={hideEmailModal}>
+          <div className="email-modal flex h-full w-full justify-center content-center flex-col-reverse	">
+            <ContactEmailResult result={emailModal.successful} />
+            <button className="self-start" onClick={hideEmailModal}>
               <CgClose />
             </button>
           </div>

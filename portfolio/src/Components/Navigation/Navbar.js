@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="py-5 px-10 sticky">
+    <header className="py-5 px-10 sticky top-0 bg-white	z-50">
       <h3 className="logo text-3xl font-bold">
         <Link to="/">LOGO</Link>
       </h3>

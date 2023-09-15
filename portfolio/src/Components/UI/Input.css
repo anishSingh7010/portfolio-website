@@ -1,21 +1,21 @@
 .input {
-    margin-bottom: 1.5rem;
-    text-align: left;
+  margin-bottom: 1.5rem;
+  text-align: left;
   }
   
-  .input label {
-    font-weight: bold;
-    margin-right: 1rem;
-  }
-  
-  .input input {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font: inherit;
-    padding: 10px;
-  }
+.input label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
 
-  input.field-error {
-    border-color: red;
-  }
+.input input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding: 10px;
+}
+
+input.field-error {
+  border-color: red;
+}
