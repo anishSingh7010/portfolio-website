@@ -1,0 +1,8 @@
+.contact-information-wrapper span {
+    font-size: 25px;
+    display: block;
+}
+
+.contact-information-wrapper svg {
+    display: inline-block;
+}
