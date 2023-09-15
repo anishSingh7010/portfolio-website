@@ -1,11 +1,12 @@
 import { LuGraduationCap } from 'react-icons/lu';
+import { BsBriefcase } from 'react-icons/bs';
 import './EducationAndExperience.css';
 import Timeline from '../UI/Timeline';
 
 const EducationAndExperience = () => {
   return (
     <>
-      <h1 className="text-4xl">My Journey</h1>
+      <h1 className="text-4xl mb-6">My Journey</h1>
       <div
         id="education-experience"
         className="education-experience-wrapper flex flex-col justify-center items-center md:flex-row md:flex-start"
@@ -30,7 +31,7 @@ const EducationAndExperience = () => {
         </div>
         <div className="experience">
           <h1 className="text-3xl mb-5 text-center">
-            <LuGraduationCap className="mr-2" />
+            <BsBriefcase className="mr-2" />
             Work Experience
           </h1>
           <div className="timeline-wrapper flex flex-col">

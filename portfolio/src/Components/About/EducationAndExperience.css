@@ -2,6 +2,18 @@
     display: inline;
 }
 
+.education-experience-wrapper > div {
+    margin-bottom: 20px;
+}
+
 .timeline-wrapper .timeline {
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .education-experience-wrapper {
+        min-width: 750px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }

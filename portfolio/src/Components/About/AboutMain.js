@@ -1,6 +1,7 @@
 import AboutIntroduction from './AboutIntroduction';
 import './AboutMain.css';
 import EducationAndExperience from './EducationAndExperience';
+import LatestWork from './LatestWork';
 
 const AboutMain = () => {
   return (
@@ -15,6 +16,7 @@ const AboutMain = () => {
         <AboutIntroduction />
       </div>
       <EducationAndExperience />
+      <LatestWork />
     </div>
   );
 };

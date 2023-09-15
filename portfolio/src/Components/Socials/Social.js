@@ -7,6 +7,7 @@ const Social = (props) => {
       href={props.link}
       className={'social-' + props.class}
       target="_blank"
+      rel="noreferrer"
     >
       {props.children}
     </a>
