@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Error404 from './Components/Error/Error404';
+import ProjectsPage from './pages/ProjectsPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +43,15 @@ function App() {
         <>
           <NavBar />
           <About />
+        </>
+      ),
+    },
+    {
+      path: '/projects',
+      element: (
+        <>
+          <NavBar />
+          <ProjectsPage />
         </>
       ),
     },

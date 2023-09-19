@@ -1,0 +1,14 @@
+.projects-wrapper .project-card {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .projects-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .projects-wrapper .project-card {
+        flex: 0 0 30%;
+    }
+}
