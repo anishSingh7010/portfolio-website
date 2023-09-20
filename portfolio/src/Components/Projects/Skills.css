@@ -8,10 +8,11 @@
 }
 
 .skills-wrapper {
-    background-color: #f2f2f2;
     animation: 15s slide infinite linear;
     text-align: center;
     display: inline-block;
+    animation-play-state: running;
+    width: max-content;
 }
 
 .skills-section {

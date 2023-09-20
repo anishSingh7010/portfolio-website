@@ -32,7 +32,6 @@
 
 .back.card-face {
     transform: rotateY(180deg);
-    background-color: grey;
 }
 
 .overlay {

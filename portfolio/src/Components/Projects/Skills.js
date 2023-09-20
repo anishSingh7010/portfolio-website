@@ -4,7 +4,7 @@ import SkillsUI from './SkillsUI';
 
 const Skills = () => {
   return (
-    <div className="mb-11 skills-section w-full p-4">
+    <div id="skills-section" className="mb-11 skills-section w-full p-4">
       <h1 className="text-5xl font-bold mb-11">Skills</h1>
       <div className="skills-wrapper">
         {LOGOS.map((logo) => (

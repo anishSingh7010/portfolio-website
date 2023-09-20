@@ -24,6 +24,10 @@ header {
     margin: auto;
 }
 
+.navigation-items a.active {
+    color: var(--secondary);
+}
+
 @media (min-width: 768px) {
     .desktop-navigation {
         display: block;
