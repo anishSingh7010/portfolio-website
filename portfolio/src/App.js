@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Error404 from './Components/Error/Error404';
 import ProjectsPage from './pages/ProjectsPage';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,7 @@ function App() {
         <>
           <NavBar />
           <Homepage />
+          <Footer />
         </>
       ),
     },
@@ -25,6 +27,7 @@ function App() {
         <>
           <NavBar />
           <Resume />
+          <Footer />
         </>
       ),
     },
@@ -34,6 +37,7 @@ function App() {
         <>
           <NavBar />
           <Contact />
+          <Footer />
         </>
       ),
     },
@@ -43,6 +47,7 @@ function App() {
         <>
           <NavBar />
           <About />
+          <Footer />
         </>
       ),
     },
@@ -52,6 +57,7 @@ function App() {
         <>
           <NavBar />
           <ProjectsPage />
+          <Footer />
         </>
       ),
     },
@@ -61,6 +67,7 @@ function App() {
         <>
           <NavBar />
           <Error404 />
+          <Footer />
         </>
       ),
     },

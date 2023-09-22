@@ -9,7 +9,7 @@ const Projects = () => {
     <div className="projects-page-wrapper flex justify-center items-center flex-col p-10">
       <div className="flex flex-col items-center mb-11">
         <h1 className="text-5xl font-bold mb-11">My Projects</h1>
-        <div className="projects-introduction mb-7 text-center">
+        <div className="projects-introduction mb-7 text-center text-lg">
           <p>
             This page is a work in progress. I will keep adding any projects
             here, so please keep an eye out for my new works.

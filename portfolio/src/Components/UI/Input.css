@@ -19,3 +19,11 @@
 input.field-error {
   border-color: red;
 }
+
+input:focus {
+  border: 1px solid var(--secondary);
+}
+
+input[type="text"], input[type="email"] { 
+  outline: none;
+}

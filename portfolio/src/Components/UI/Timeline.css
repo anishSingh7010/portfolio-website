@@ -5,10 +5,10 @@
 
 .timeline::before {
     content: '';
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     position: absolute;
-    background-color: black;
+    background-color: var(--secondary);
     border-radius: 100%;
-    left: -13px;
+    left: -8px;
 }

@@ -1,9 +1,10 @@
 .hero-button {
     padding: 10px 20px;
     color: white;
-    border-radius: 35px;
+    border-radius: 15px;
     width: 240px;
     font-size: 45px;
+    margin-top: 20px;
 }
 
 .hero-image-wrapper {
@@ -19,14 +20,26 @@
     margin-top: -50px;
 }
 
-.socials {
-    margin: 10px 0;
+.hero-banner-wrapper {
+    margin-bottom: auto;
+}
+
+.hero-text {
+    color: var(--secondary);
     text-align: center;
 }
 
-.socials a {
+.hero-text span {
+    margin-bottom: 10px;
+}
+
+.hero-text .hero-name, .hero-text .hero-position, .hero-text .hero-intro {
+    color: var(--primary);
+}
+
+.hero-text a {
     display: inline-block;
-    margin: 0 10px;
+    padding: 10px 15px;
 }
 
 @media (min-width: 768px) {
@@ -53,5 +66,18 @@
 
     .hero-text {
         max-width: 700px;
+        text-align: left;
+    }
+
+    .hero-button {
+        margin: 30px 0;
+    }
+
+    .hero-intro {
+        font-size: 24px;
+    }
+
+    .hero-text a {
+        margin-right: 20px;
     }
 }
