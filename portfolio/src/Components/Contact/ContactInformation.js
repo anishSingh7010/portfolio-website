@@ -4,6 +4,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { AiOutlinePhone } from 'react-icons/ai';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import Social from '../Socials/Social';
+import leetcode from '../../assets/leetcode.png';
 
 const ContactInformation = () => {
   return (
@@ -13,10 +14,14 @@ const ContactInformation = () => {
           <IoIosContact /> Name: Anish
         </span>
         <span className="contact-info">
-          <AiOutlinePhone /> Phone: (437)-985-7010
+          <a href="tel:+14379857010">
+            <AiOutlinePhone /> Phone: (437)-985-7010
+          </a>
         </span>
         <span className="contact-info">
-          <HiOutlineMail /> Email: anishsingh0106@gmail.com
+          <a href="mailto:anishsingh0106@gmail.com">
+            <HiOutlineMail /> Email: anishsingh0106@gmail.com
+          </a>
         </span>
       </div>
       <div className="socials">
@@ -33,6 +38,13 @@ const ContactInformation = () => {
           link="https://github.com/anishSingh7010"
         >
           <BsGithub />
+        </Social>
+        <Social
+          title="Leetcode"
+          class="leetcode"
+          link="https://leetcode.com/anishkap7010/"
+        >
+          <img src={leetcode} alt="leetcode-logo" width="30px" height="30px" />
         </Social>
       </div>
     </div>

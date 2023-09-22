@@ -10,6 +10,17 @@
     margin-bottom: 20px;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(40%);
+    transition: all 1s ease-out;
+}
+
+.active {
+    opacity: 4;
+    transform: translateY(0);
+}
+
 @media (min-width: 768px) {
     .education-experience-wrapper {
         min-width: 750px;

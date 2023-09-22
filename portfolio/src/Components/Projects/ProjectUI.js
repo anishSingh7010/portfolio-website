@@ -38,20 +38,10 @@ const ProjectUI = ({
             <span className="font-bold">Project Description:</span>
             {description}
           </p>
-          <a
-            className="button"
-            href={websiteLink}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="button" href={websiteLink}>
             View Website
           </a>
-          <a
-            className="button"
-            href={githubLink}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="button" href={githubLink}>
             View Source Code
           </a>
         </div>

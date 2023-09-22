@@ -28,6 +28,7 @@ const Projects = () => {
           see their progress over time."
             websiteLink="#"
             githubLink="#"
+            isWorkInProgress={true}
           />
 
           <ProjectUI

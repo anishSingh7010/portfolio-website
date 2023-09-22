@@ -6,7 +6,7 @@ import LatestWork from './LatestWork';
 const AboutMain = () => {
   return (
     <div className="about-wrapper flex justify-center items-center flex-col">
-      <div className="flex items-center">
+      <div className="flex items-center mb-7">
         <div className="about-image hidden md:block">
           <img
             alt="about-intro"

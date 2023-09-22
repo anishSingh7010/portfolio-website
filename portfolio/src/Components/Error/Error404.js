@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Error404.css';
+import { Helmet } from 'react-helmet';
 
 const Error404 = () => {
   return (
     <div className="error-page-wrapper text-center">
+      <Helmet>
+        <title>Error 404</title>
+      </Helmet>
       <h1 className="block error-404-title">OOPS!</h1>
       <div>
         <div className="error-404-contents">

@@ -613,6 +613,10 @@ video {
   z-index: 50;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -625,6 +629,10 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-11 {
@@ -765,6 +773,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -789,14 +801,19 @@ video {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -815,11 +832,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 :root {
@@ -857,7 +869,12 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
+.button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.button:hover:not([disabled]) {
   background-color: white;
   color: var(--primary);
 }
@@ -888,6 +905,11 @@ textarea {
   font: inherit;
   padding: 10px;
   min-height: 200px;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid var(--secondary);
 }
 
 @media (min-width: 768px) {

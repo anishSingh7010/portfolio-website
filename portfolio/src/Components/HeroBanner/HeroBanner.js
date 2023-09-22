@@ -1,4 +1,4 @@
-import heroImage from '../../assets/portfolioHeroBanner.jpeg';
+import heroImage from '../../assets/portfolioHeroBanner.jpg';
 import './HeroBanner.css';
 import { Link } from 'react-router-dom';
 
@@ -13,8 +13,8 @@ const HeroBanner = () => {
             Full stack developer
           </span>
           <span className="text-xl hero-intro">
-            Welcome to my portfolio website. Check out my work or find out
-            more about my background.
+            Welcome to my portfolio website. Check out my work or find out more
+            about my background.
           </span>
         </div>
 
