@@ -83,4 +83,15 @@
     .hero-text a {
         margin-right: 20px;
     }
+
+    .hero-button-wrapper {
+        display: inline-block;
+    }
+}
+
+@media (min-width:768px) and (max-width:1080px) {
+    .hero-button {
+        font-size: 28px;
+        width: 160px;
+    }
 }

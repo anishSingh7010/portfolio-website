@@ -17,13 +17,16 @@ const HeroBanner = () => {
             about my background.
           </span>
         </div>
-
-        <Link to="/projects" className="button hero-button block m-auto">
-          My Work
-        </Link>
-        <Link to="/about" className="button hero-button block m-auto">
-          About Me
-        </Link>
+        <div className="hero-button-wrapper">
+          <Link to="/projects" className="button hero-button block m-auto">
+            My Work
+          </Link>
+        </div>
+        <div className="hero-button-wrapper">
+          <Link to="/about" className="button hero-button block m-auto">
+            About Me
+          </Link>
+        </div>
       </div>
       <div className="hero-image-wrapper">
         <img alt="Hero" src={heroImage} />
