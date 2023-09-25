@@ -2,8 +2,8 @@
     padding: 10px 20px;
     color: white;
     border-radius: 15px;
-    width: 240px;
-    font-size: 45px;
+    width: 200px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
@@ -72,6 +72,8 @@
 
     .hero-button {
         margin: 30px 0;
+        width: 240px;
+        font-size: 45px;
     }
 
     .hero-intro {

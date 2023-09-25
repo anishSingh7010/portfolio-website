@@ -613,10 +613,6 @@ video {
   z-index: 50;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -669,10 +665,6 @@ video {
 
 .block {
   display: block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {

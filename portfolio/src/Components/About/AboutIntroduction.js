@@ -3,7 +3,7 @@ import './AboutIntroduction.css';
 
 const AboutIntroduction = () => {
   return (
-    <div className="about-introduction md:max-w-lg p-5">
+    <div className="about-introduction md:max-w-lg p-5 md:w-6/12">
       <h1 className="font-semibold text-6xl mb-5">About Me</h1>
       <div className="introuction-text-wrapper mb-5 text-lg">
         <p>

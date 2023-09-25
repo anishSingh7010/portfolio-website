@@ -5,6 +5,7 @@ import NavItems from './NavItems';
 import { Modal } from '../UI/Modal';
 import { CgClose } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
+import portfolioLogo from '../../assets/portfolioLogo.png';
 
 const NavBar = () => {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
@@ -20,7 +21,9 @@ const NavBar = () => {
   return (
     <header className="py-5 px-10 sticky top-0 bg-white	z-50">
       <h3 className="logo text-3xl font-bold">
-        <Link to="/">LOGO</Link>
+        <Link to="/">
+          <img src={portfolioLogo} alt="logo" title="Home" />
+        </Link>
       </h3>
       {isNavigationOpen && (
         <Modal onClose={hideNavigationModalHandler}>
