@@ -22,7 +22,7 @@ const NavBar = () => {
     <header className="py-5 px-10 sticky top-0 bg-white	z-50">
       <h3 className="logo text-3xl font-bold">
         <Link to="/">
-          <img src={portfolioLogo} alt="logo" title="Home" />
+          <img src={portfolioLogo} alt="logo" title="Home" width="100px" />
         </Link>
       </h3>
       {isNavigationOpen && (
