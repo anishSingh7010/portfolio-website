@@ -24,7 +24,7 @@ header {
     margin: auto;
 }
 
-.navigation-items a.active {
+.navigation-items a.active, .navigation-items a:hover {
     color: var(--secondary);
 }
 

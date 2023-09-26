@@ -16,7 +16,10 @@ const Projects = () => {
           </p>
           <p className="text-center">
             Meanwhile, feel free to check out my skillset. Scroll down past the
-            projects or <a href="#skills-section">Click Here.</a>
+            projects or{' '}
+            <a className="underline" href="#skills-section">
+              Click Here.
+            </a>
           </p>
         </div>
         <div className="projects-wrapper flex justify-center items-center flex-col">

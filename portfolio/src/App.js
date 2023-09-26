@@ -1,6 +1,7 @@
 import './App.css';
 import {
   createBrowserRouter,
+  Outlet,
   RouterProvider,
   ScrollRestoration,
 } from 'react-router-dom';
@@ -21,58 +22,11 @@ function App() {
         <>
           <ScrollRestoration />
           <NavBar />
-          <Homepage />
+          <Outlet />
           <Footer />
         </>
       ),
-    },
-    {
-      path: '/resume',
-      element: (
-        <>
-          <ScrollRestoration />
-          <NavBar />
-          <Resume />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: '/contact',
-      element: (
-        <>
-          <ScrollRestoration />
-          <NavBar />
-          <Contact />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: '/about',
-      element: (
-        <>
-          <ScrollRestoration />
-          <NavBar />
-          <About />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: '/projects',
-      element: (
-        <>
-          <ScrollRestoration />
-          <NavBar />
-          <ProjectsPage />
-          <Footer />
-        </>
-      ),
-    },
-    {
-      path: '*',
-      element: (
+      errorElement: (
         <>
           <ScrollRestoration />
           <NavBar />
@@ -80,6 +34,48 @@ function App() {
           <Footer />
         </>
       ),
+      children: [
+        {
+          path: '/',
+          element: (
+            <>
+              <Homepage />
+            </>
+          ),
+        },
+        {
+          path: '/resume',
+          element: (
+            <>
+              <Resume />
+            </>
+          ),
+        },
+        {
+          path: '/contact',
+          element: (
+            <>
+              <Contact />
+            </>
+          ),
+        },
+        {
+          path: '/about',
+          element: (
+            <>
+              <About />
+            </>
+          ),
+        },
+        {
+          path: '/projects',
+          element: (
+            <>
+              <ProjectsPage />
+            </>
+          ),
+        },
+      ],
     },
   ]);
 
