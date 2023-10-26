@@ -1,5 +1,5 @@
 import ProjectUI from './ProjectUI';
-import stockGym from '../../assets/stock-gym-image.jpg';
+// import stockGym from '../../assets/stock-gym-image.jpg';
 import stockDesk from '../../assets/stock-desk.jpg';
 import './Projects.css';
 import Skills from './Skills';
@@ -10,9 +10,11 @@ const Projects = () => {
       <div className="flex flex-col items-center mb-11">
         <h1 className="text-5xl font-bold mb-11">My Projects</h1>
         <div className="projects-introduction mb-7 text-center text-lg">
-          <p>
-            This page is a work in progress. I will keep adding any projects
-            here, so please keep an eye out for my new works.
+          <p className="disclaimer">
+            This page is a work in progress. I am currently working on a Workout
+            Tracker Project using MERN stack which I will be deploying by end of
+            November. Also, I plan to keep adding more projects here, so please
+            keep an eye out for my new works.
           </p>
           <p className="text-center">
             Meanwhile, feel free to check out my skillset. Scroll down past the
@@ -23,7 +25,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="projects-wrapper flex justify-center items-center flex-col">
-          <ProjectUI
+          {/* <ProjectUI
             backgroundImage={stockGym}
             title="Workout Tracker"
             description=" Workout
@@ -32,7 +34,7 @@ const Projects = () => {
             websiteLink="#"
             githubLink="#"
             isWorkInProgress={true}
-          />
+          /> */}
 
           <ProjectUI
             backgroundImage={stockDesk}

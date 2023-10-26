@@ -1,14 +1,19 @@
 .projects-wrapper .project-card {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
-    .projects-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .projects-wrapper .project-card {
-        flex: 0 0 30%;
-    }
+  .projects-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .projects-wrapper .project-card {
+    flex: 0 0 30%;
+  }
+
+  .projects-introduction p {
+    width: 60%;
+    margin: auto;
+  }
 }
