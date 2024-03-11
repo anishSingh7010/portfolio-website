@@ -43,7 +43,12 @@ const ProjectUI = ({
               View Website
             </a>
           )}
-          <a className="button" href={githubLink} target="_blank">
+          <a
+            className="button"
+            href={githubLink}
+            target="_blank"
+            rel="noreferrer"
+          >
             View Source Code
           </a>
         </div>
