@@ -38,10 +38,12 @@ const ProjectUI = ({
             <span className="font-bold">Project Description:</span>
             {description}
           </p>
-          <a className="button" href={websiteLink}>
-            View Website
-          </a>
-          <a className="button" href={githubLink}>
+          {websiteLink && (
+            <a className="button" href={websiteLink}>
+              View Website
+            </a>
+          )}
+          <a className="button" href={githubLink} target="_blank">
             View Source Code
           </a>
         </div>
