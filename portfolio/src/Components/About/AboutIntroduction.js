@@ -21,8 +21,7 @@ const AboutIntroduction = () => {
         <p>
           I try to workout 4-5 days a week, some days it's hard to stay
           consistent but I am trying to make it a habit than rely on motivation.
-          Also, these days I am playing Street Fighter 6 a lot and trying to get
-          to master rank. I would love to stream one day. One day :)
+          I play a little bit of Street Fighter 6 and I main Cammy!
         </p>
       </div>
       <ContactInformation />

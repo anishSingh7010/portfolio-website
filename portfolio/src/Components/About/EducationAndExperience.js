@@ -61,19 +61,19 @@ const EducationAndExperience = () => {
           </h1>
           <div className="timeline-wrapper flex flex-col">
             <Timeline
-              institute="Publicis Sapient Canada"
-              position="Senior Software Engineer 1"
-              duration="Jan 2023 - Present"
+              institute="Kojo Technologies"
+              position="Software Engineer 2"
+              duration="June 2024 - Present"
             />
             <Timeline
               institute="Publicis Sapient Canada"
               position="Software Engineer 2"
-              duration="May 2021 - Dec 2022"
+              duration="Jan 2023 - May 2024"
             />
             <Timeline
-              institute="Publicis Sapient India"
+              institute="Publicis Sapient Canada"
               position="Software Engineer 1"
-              duration="Jul 2018 - Nov 2019"
+              duration="May 2021 - Dec 2022"
             />
           </div>
         </div>
